@@ -85,6 +85,20 @@ Invoice Generator is a Node.js-based web application that allows users to create
 - `GET /settings`: View settings page
 - `POST /settings`: Update settings
 
+### 🤖 AI-Assisted Development Process
+
+This project was built using a "prompt-first" approach, where I leveraged an LLM as a coding co-pilot to translate a concept into a functional application.
+
+*   **The Core Prompt:** I began by architecting the project with a high-level prompt to generate the foundational structure:
+    > *"Create a web application using Streamlit that functions as an invoice generator. The app should have input fields for company details, client details, item descriptions, quantities, and prices. It needs to automatically calculate totals and generate a downloadable PDF invoice."*
+
+*   **Iteration and Refinement:** The AI generated the initial Streamlit layout. I then used a series of more specific, follow-up prompts to build out the features:
+    *   "Write a Python function using the `fpdf2` library to take the invoice data and render it into a structured PDF document."
+    *   "Add a feature to include a company logo in the generated PDF."
+    *   "Implement a 'subtotal' and 'tax' calculation before the final total."
+
+*   **My Role as the Developer:** My primary role was not just to code, but to act as the architect. This involved designing the prompts, critically evaluating and debugging the AI-generated code, integrating the PDF generation logic with the Streamlit front-end, and testing the final application to ensure it was robust and reliable.```*
+
 ## License
 
 This project is licensed under the ISC License.
@@ -95,4 +109,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Author
 
-[Ankit Singh]
+Made With Vibes & ❤️ By Ankit Singh
